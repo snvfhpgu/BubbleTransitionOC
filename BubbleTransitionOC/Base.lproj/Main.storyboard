@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W3i-Es-Xhz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Xvc-Va-rFe">
+            <objects>
+                <viewController id="u4a-CQ-sZe" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SU6-dZ-cfA"/>
+                        <viewControllerLayoutGuide type="bottom" id="iai-Yk-rRb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MWv-4Y-tUl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgres-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mzn-fZ-6hn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twf-fD-GvX">
+                                <rect key="frame" x="135" y="485" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.2086925751" green="0.81568627449999997" blue="0.33926108430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="aKY-Sk-Cxd"/>
+                                    <constraint firstAttribute="height" constant="50" id="cbz-7Y-IoA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="JYf-Ww-KAw" kind="push" id="7tg-aW-bEI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iai-Yk-rRb" firstAttribute="top" secondItem="mzn-fZ-6hn" secondAttribute="bottom" id="07g-S8-a7Y"/>
+                            <constraint firstAttribute="trailing" secondItem="mzn-fZ-6hn" secondAttribute="trailing" id="DB7-nD-d5E"/>
+                            <constraint firstItem="mzn-fZ-6hn" firstAttribute="leading" secondItem="MWv-4Y-tUl" secondAttribute="leading" id="Fyd-Ie-LIm"/>
+                            <constraint firstItem="twf-fD-GvX" firstAttribute="top" secondItem="SU6-dZ-cfA" secondAttribute="bottom" constant="421" id="K4R-dz-bPN"/>
+                            <constraint firstItem="mzn-fZ-6hn" firstAttribute="top" secondItem="MWv-4Y-tUl" secondAttribute="top" id="LrN-ak-Ivh"/>
+                            <constraint firstAttribute="trailing" secondItem="twf-fD-GvX" secondAttribute="trailing" constant="135" id="VkO-IC-cty"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sam-Ef-UKN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="button" destination="twf-fD-GvX" id="Hy5-bg-3ue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rp0-jf-Sbe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="355"/>
+        </scene>
+        <!--Two View Controller-->
+        <scene sceneID="S93-Ww-UWb">
+            <objects>
+                <viewController id="JYf-Ww-KAw" customClass="TwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IfC-JF-IH6"/>
+                        <viewControllerLayoutGuide type="bottom" id="l1b-Rt-bxd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cs6-aD-fug">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lHk-UX-hBU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.90861556740000005" green="0.8840814427" blue="0.093553465370000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2d-ul-vto">
+                                <rect key="frame" x="135" y="484" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4xz-NZ-QRo"/>
+                                    <constraint firstAttribute="width" constant="50" id="lLC-Ty-nXa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeAction:" destination="JYf-Ww-KAw" eventType="touchUpInside" id="977-ew-iIF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="lHk-UX-hBU" firstAttribute="leading" secondItem="Cs6-aD-fug" secondAttribute="leading" id="5aJ-bx-w6K"/>
+                            <constraint firstAttribute="trailing" secondItem="w2d-ul-vto" secondAttribute="trailing" constant="135" id="7n1-QD-cuh"/>
+                            <constraint firstItem="lHk-UX-hBU" firstAttribute="top" secondItem="Cs6-aD-fug" secondAttribute="topMargin" id="F4q-4F-4kU"/>
+                            <constraint firstAttribute="trailing" secondItem="lHk-UX-hBU" secondAttribute="trailing" id="aFM-Fa-lGC"/>
+                            <constraint firstItem="w2d-ul-vto" firstAttribute="top" secondItem="IfC-JF-IH6" secondAttribute="bottom" constant="420" id="jca-gw-tYi"/>
+                            <constraint firstItem="l1b-Rt-bxd" firstAttribute="top" secondItem="lHk-UX-hBU" secondAttribute="bottom" id="wKw-7x-tWl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Le1-Yn-hZF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="closeBtn" destination="w2d-ul-vto" id="raH-Dn-LJH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhx-6z-8gd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="355"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bNm-BV-2FV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W3i-Es-Xhz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1tO-p1-8NA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="u4a-CQ-sZe" kind="relationship" relationship="rootViewController" id="dv2-2o-6O3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zu-XN-VKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-470" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgres-1.jpg" width="188" height="188"/>
+        <image name="pic1.png" width="1296" height="1442"/>
+    </resources>
+</document>

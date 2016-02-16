@@ -1,2 +1,2 @@
 # BubbleTransitionOC
-https://github.com/andreamazz/BubbleTransition OC version
+This is the OC version of https://github.com/andreamazz/BubbleTransition 

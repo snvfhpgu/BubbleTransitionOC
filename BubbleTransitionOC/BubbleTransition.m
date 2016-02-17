@@ -75,10 +75,8 @@
         _bubble.layer.cornerRadius = _bubble.frame.size.height / 2;
         _bubble.center = _startingPoint;
 
-        [UIView animateWithDuration:_duration delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveLinear animations:^{
-//            <#code#>
-//        } completion:<#^(BOOL finished)completion#>]
-//        [UIView animateWithDuration:_duration animations:^{
+//        [UIView animateWithDuration:_duration delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveLinear animations:^{
+        [UIView animateWithDuration:_duration animations:^{
             self.bubble.transform = CGAffineTransformMakeScale(0.001, 0.001);
             returningControllerView.transform = CGAffineTransformMakeScale(0.001, 0.001);
             returningControllerView.center = self.startingPoint;
